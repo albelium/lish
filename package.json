@@ -7,7 +7,8 @@
         "build": "next build",
         "start": "next start -p ${PORT:-3332}",
         "lint": "next lint --dir src",
-        "lint:fix": "yarn lint --fix"
+        "lint:fix": "yarn lint --fix",
+        "format": "prettier --write --ignore-path .gitignore './src/**/*.{js,jsx,ts,tsx,json}'"
     },
     "dependencies": {
         "graphql": "^16.5.0",
@@ -24,7 +25,9 @@
         "autoprefixer": "^10.4.7",
         "eslint": "8.18.0",
         "eslint-config-next": "12.2.0",
+        "eslint-config-prettier": "^8.5.0",
         "postcss": "^8.4.14",
+        "prettier": "^2.7.1",
         "prisma": "^4.0.0",
         "tailwindcss": "^3.1.4",
         "typescript": "4.7.4"
