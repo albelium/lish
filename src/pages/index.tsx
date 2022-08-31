@@ -1,7 +1,7 @@
-import { MainLayout } from '@/components/Layout';
-import { supabase } from '@/lib/supabaseClient';
 import type { NextPage } from 'next';
 import { useEffect, useState } from 'react';
+import { MainLayout } from '@/components/Layout';
+import { supabase } from '@/lib/supabaseClient';
 
 const Home: NextPage = () => {
   const [bucketItems, setBucketItems] = useState<any[] | null>();
